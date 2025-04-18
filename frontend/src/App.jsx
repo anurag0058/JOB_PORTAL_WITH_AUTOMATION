@@ -7,9 +7,11 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashbboard";
 import Jobs from './pages/Jobs';
 import Login from "./pages/Login";
-import NotFound from "./pages/Login";
+import NotFound from "./pages/NotFound";
 import PostApplication from "./pages/PostApplication"
 import Register from "./pages/Register";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
@@ -26,6 +28,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        <ToastContainer position="top-right" theme="dark" />
         <Footer />
       </Router>
     </>
