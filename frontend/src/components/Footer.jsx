@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa6";
+import Logo from '../assests/logo.png';
 
 const Footer = () => {
   const { isAuthenticated } = useSelector((state) => state.user);
@@ -14,7 +15,7 @@ const Footer = () => {
     <>
       <footer>
         <div>
-          <img src="/logo.png" alt="logo" />
+          <img src={Logo} alt="logo" />
         </div>
         <div>
           <h4>Support</h4>
