@@ -88,7 +88,7 @@ const Jobs = () => {
 
   return (
     <>
-      {loading ? (
+      {loading ?(
         <Spinner />
       ) : (
         <section className="jobs">
