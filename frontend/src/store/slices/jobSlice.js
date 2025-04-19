@@ -56,21 +56,21 @@ const jobSlice = createSlice({
       state.loading = false;
     },
 
-    // requestForDeleteJob(state, action) {
-    //   state.loading = true;
-    //   state.error = null;
-    //   state.message = null;
-    // },
-    // successForDeleteJob(state, action) {
-    //   state.loading = false;
-    //   state.error = null;
-    //   state.message = action.payload;
-    // },
-    // failureForDeleteJob(state, action) {
-    //   state.loading = false;
-    //   state.error = action.payload;
-    //   state.message = null;
-    // },
+    requestForDeleteJob(state, action) {
+      state.loading = true;
+      state.error = null;
+      state.message = null;
+    },
+    successForDeleteJob(state, action) {
+      state.loading = false;
+      state.error = null;
+      state.message = action.payload;
+    },
+    failureForDeleteJob(state, action) {
+      state.loading = false;
+      state.error = action.payload;
+      state.message = null;
+    },
 
     requestForMyJobs(state, action) {
       state.loading = true;
@@ -194,7 +194,7 @@ export const getMyJobs = () => async (dispatch) => {
   dispatch(jobSlice.actions.requestForMyJobs());
   try {
     const response = await axios.get(
-      `https://job-portal-backend-sifx.onrender.com/api/v1/job/getmyjobs`,
+      `http://localhost:4000/api/v1/job/getmyjobs`,
       { withCredentials: true }
     );
     dispatch(jobSlice.actions.successForMyJobs(response.data.myJobs));
@@ -203,7 +203,19 @@ export const getMyJobs = () => async (dispatch) => {
     dispatch(jobSlice.actions.failureForMyJobs(error.response.data.message));
   }
 };
-
+export const deleteJob = (id) => async (dispatch) => {
+  dispatch(jobSlice.actions.requestForDeleteJob());
+  try {
+    const response = await axios.delete(
+      `http://localhost:4000/api/v1/job/delete/${id}`,
+      { withCredentials: true }
+    );
+    dispatch(jobSlice.actions.successForDeleteJob(response.data.message));
+    dispatch(clearAllJobErrors());
+  } catch (error) {
+    dispatch(jobSlice.actions.failureForDeleteJob(error.response.data.message));
+  }
+};
 
 export const clearAllJobErrors = () => (dispatch) => {
   dispatch(jobSlice.actions.clearAllErrors());
