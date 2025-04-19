@@ -33,7 +33,7 @@ export const postApplication = catchAsyncErrors(async(req,res,next)=>{
     }
     
     const isAlreadyApplied = await Application.findOne({
-        "jobInfo.id": id,
+        "jobInfo.jobId": id,
         "jobSeekerInfo": req.user._id,
     });
     if(isAlreadyApplied){
