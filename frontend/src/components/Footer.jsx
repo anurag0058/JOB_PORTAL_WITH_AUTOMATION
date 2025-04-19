@@ -20,9 +20,9 @@ const Footer = () => {
         <div>
           <h4>Support</h4>
           <ul>
-            <li>Street No.007 Shahrah-e-Faisal Karachi, Pakistan</li>
-            <li>nichenest@gmail.com</li>
-            <li>+92 3106507521</li>
+            <li>Khargapur, Gomti Nagar Lucknow ,Uttar Pradesh</li>
+            <li>rathourasr0508@gmail.com</li>
+            <li>+91 7393034944</li>
           </ul>
         </div>
 
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="copyright">
-        &copy; CopyRight 2024. All Rights Reserved By CodeWithZeeshu
+        &copy; CopyRight 2025. All Rights Reserved By Anurag Singh
       </div>
     </>
   );
