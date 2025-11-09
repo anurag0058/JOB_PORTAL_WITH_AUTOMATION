@@ -94,17 +94,6 @@ Install dependencies for the backend and frontend:
 cd back && npm install
 cd ../frontend && npm install
 
-Set up environment variables:
-
-Create a .env file in the backend directory with the following:
-
-PORT=5000
-MONGO_URI=your-mongodb-connection-string
-JWT_SECRET_KEY=your-jwt-secret
-CLOUDINARY_NAME=dn2fqt7ob
-CLOUDINARY_API_KEY=363652654878213
-CLOUDINARY_API_SECRET=4hPVJJnCSk0xpVZ-8bsSL6nhB5k
-
 Start the backend server:
 
 cd back && npm start
