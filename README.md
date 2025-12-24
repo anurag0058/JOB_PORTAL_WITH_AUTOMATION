@@ -6,10 +6,14 @@ The Job Portal with Automation is designed to streamline the recruitment process
 It provides job postings, search & filter functionality, application tracking, and automation to reduce manual effort and improve efficiency.
 
 🎯 User Roles
+👨‍💼 Job Seeker
+– Searches jobs, applies, and receives automated alerts
 
-👨‍💼 Job Seeker – Searches jobs, applies, and receives automated alerts
-🏢 Employer – Posts jobs, manages listings, and reviews applications
-⚙️ Automation System – Handles recommendations, parsing, and notifications
+🏢 Employer
+– Posts jobs, manages listings, and reviews applications
+
+⚙️ Automation System
+– Handles recommendations, parsing, and notifications
 
 🚀 Features
 
@@ -59,14 +63,12 @@ It provides job postings, search & filter functionality, application tracking, a
 ✔️ Cloudinary Account
 
 📦 Steps:
-
 git clone https://github.com/anurag0058/JOB_PORTAL_WITH_AUTOMATION
 cd job-portal-with-automation
 cd back && npm install
 cd ../frontend && npm install
 cd back && npm start
 cd ../frontend && npm start
-
 
 📖 Usage
 🏠 Browse job listings
