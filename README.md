@@ -53,7 +53,7 @@ It provides job postings, search & filter functionality, application tracking, a
 ⏰ Cron Jobs (Automation)  
 
 🌐 Live Project  
-🔗 https://anurag-job-portal-with-automation.netlify.app/  
+🔗 https://anurag-job-portal-with-automation.netlify.app/    
 
 🛠️ Installation & Setup  
 
@@ -63,7 +63,7 @@ It provides job postings, search & filter functionality, application tracking, a
 ✔️ Cloudinary Account  
 
 📦 Steps:  
-git clone https://github.com/anurag0058/JOB_PORTAL_WITH_AUTOMATION  
+git clone https://github.com/anurag0058/JOB_PORTAL_WITH_AUTOMATION 
 cd job-portal-with-automation  
 cd back && npm install  
 cd ../frontend && npm install      
