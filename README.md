@@ -1,7 +1,7 @@
 🏷️ Job Portal with Automation<br>
 A smart, full-stack job portal built using the MERN stack (MongoDB, Express, React, Node.js) with automation features to simplify job searching and hiring.
 
-📌 Project Overview
+📌 Project Overview  
 The Job Portal with Automation is designed to streamline the recruitment process for job seekers and employers.
 It provides job postings, search & filter functionality, application tracking, and automation to reduce manual effort and improve efficiency.
 
